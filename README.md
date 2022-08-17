@@ -1,38 +1,59 @@
 
-# Graduation-project (ODM)
+
+# Graduation project (ODM)
 
 ## What is ODM
 
- Orbit Determination manager (ODM) :a full orbit calculation software package.
- 
-**ODM** provides the data needed for the ground station's **Flight Control Center (FCC)** that is the main control and satellite data provider systm in the ground station.
+Orbit Determination manager (ODM): a full orbit calculation software package.
+
+**ODM** provides the data needed for the ground station's **Flight Control Center (FCC)** which is the main control and satellite data provider system in the ground station.
 
 #### Flight Control Center (FCC):
-The **FCC** Consists of many subsystems the most importent is the *"orbit subsystem"* becouse it is  the one responsible for providing the data about satellite position, tracking, possible contacts 
-#### Orbit datermenation process:
-As mentioned the orbit subsystem is responseble for saetllite tracking so we could say it is the eye of the station in the sky and it is the one who:
 
- - tells the ground station's antena where to point and when.
- - when the satellite is above certain area or where it will be in x time. 
- - and more...
- ## Functionality
+The **FCC** Consists of many subsystems the most important is the _"orbit subsystem"_ because it is the one responsible for providing the data about satellite position, tracking, possible contacts
+
+#### Orbit determination process:
+
+As mentioned the orbit subsystem is responsible for satellite tracking so we could say it is the eye of the station in the sky and it is the one who:
+
+-   tells the ground station's antenna where to point and when.
+-   when the satellite is above a certain area or where it will be in x time.
+-   and more...
+
+## Functionality
+
 The application provides the following main functionality:
- - Fined satellite position, velocity in the orbit at an exact moment
- - Predict satellite orbit for a period: which is the satellite position in space relative to earth’s ITRS reference frame.
- - Calculate and visualize the satellite Ground track: which is the satellite path projection on the earth, surface taking the earth's rotation into consideration.  
- - Calculate and visualize satellite RVZ (radio visibility zones): in which satellite is available to connect with the ground station’s antenna.  
- - Real-Time satellite ground track tracking
 
-## Data accuracy
+-   Fined satellite position, velocity in the orbit at an exact moment
+-   Predict satellite orbit for a period: which is the satellite position in space relative to earth’s ITRS reference frame.
+-   Calculate and visualize the satellite Ground track: which is the satellite path projection on the earth, the surface considering the earth's rotation.
+-   Calculate and visualize satellite RVZ (radio visibility zones): in which satellite is available to connect with the ground station’s antenna.
+-   Real-Time satellite ground track tracking
 
-the accuracy of data provided with the application is 99.999% compared to real trusted standard data (provided from [STK](https://www.agi.com/products/stk) ).
-the following figures show data comporeson of 360,000 row for 4 days of data calculation  between "ODM", "STK" :
+## Data Accuracy
+
+the accuracy of data provided with the application is 99.999% compared to real trusted standard data (provided from [STK](https://www.agi.com/products/stk) ). the following figures show data comparison of 360,000 rows for 4 days of data calculation between "ODM", "STK" :
 
 ### satellite orbit prediction (data sample & error average)
 
+![orbit](https://user-images.githubusercontent.com/58492759/185061500-9a53028a-b085-4262-badb-282b3f3850fc.png)
+
+![orbiterror](https://user-images.githubusercontent.com/58492759/185061505-5df3b270-1101-428d-af65-c87970d053cc.png)
+
+
 ### satellite Ground tracking (data sample & error average)
 
-### satellite radio visability zones (data sample & error average)
+![ground](https://user-images.githubusercontent.com/58492759/185061440-f52a64d0-638f-437c-8df0-74d72c6bbb45.png)
+
+![grounderror](https://user-images.githubusercontent.com/58492759/185061447-ba8d97a0-36f1-419e-9ac9-3ce7eda93697.png)
+
+
+### satellite radio visibility zones (data sample & error average)
+
+![rvz](https://user-images.githubusercontent.com/58492759/185061543-4df56676-87b9-401a-b409-891d3ad5b029.png)
+
+![rvzerror](https://user-images.githubusercontent.com/58492759/185061548-cfff68d3-6561-4945-9aeb-450c2bed6a20.png)
+
 
 ## Demo
 
